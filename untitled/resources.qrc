@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/Frag.fsh</file>
+        <file>Resources/Vertex.vsh</file>
+        <file>Resources/buttonexitmenu.png</file>
+    </qresource>
+</RCC>
