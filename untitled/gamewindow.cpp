@@ -8,8 +8,6 @@ GameWindow::GameWindow(QWindow *parent):QWindow(parent)
 {
     this->setSurfaceType(QWindow::OpenGLSurface);
     QSurfaceFormat surface;
-    surface.setMajorVersion(2);
-    surface.setMinorVersion(0);
     this->setFormat(surface);
     this->setAnimating(true);
 }

@@ -9,7 +9,6 @@ void TestGame::initGameWindow()
 {
     this->setTitle("Игра");
     this->glViewport(0,0,800,600);
-    Mesh::mesh()->create();
     this->img.load("://Resources/buttonexitmenu.png");
     this->shader.load("://Resources/Vertex.vsh","://Resources/Frag.fsh");
     this->shader.createVAO("Vertex","Texture");
@@ -36,8 +35,8 @@ void TestGame::drawGameWindow()
 {
     this->glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
     this->shader.bind();
-    this->img.bind();
     this->shader.vertexArrayObject()->bind();
+    this->img.bind();
     this->shader.setUniformValue("MatrixTex", mat_tex);
     this->shader.setUniformValue("MatrixPos",mat_p*mat_pos);
     glDrawArrays(GL_TRIANGLES, 0, 6);

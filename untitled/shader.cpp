@@ -32,10 +32,10 @@ void Shader::createVAO(QString nameVertexMatrix, QString nameTextureMatrix)
 {
     vertexAO->create();
     vertexAO->bind();
-    Mesh::mesh()->vertexMesh()->bind();
+    Mesh::vertexMesh()->bind();
     this->enableAttributeArray(nameVertexMatrix.toStdString().c_str());
     this->setAttributeBuffer(nameVertexMatrix.toStdString().c_str(),GL_FLOAT,0,3);
-    Mesh::mesh()->textureMesh()->bind();
+    Mesh::textureMesh()->bind();
     this->enableAttributeArray(nameTextureMatrix.toStdString().c_str());
     this->setAttributeBuffer(nameTextureMatrix.toStdString().c_str(),GL_FLOAT,0,2);
     vertexAO->release();

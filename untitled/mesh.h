@@ -1,23 +1,19 @@
 #ifndef MESH_H
 #define MESH_H
 #include <QOpenGLBuffer>
-#include <QDebug>
 
 class Mesh
 {
 public:
     Mesh();
     ~Mesh();
-    void create();
-    static Mesh *mesh();
-    QOpenGLBuffer *vertexMesh();
-    QOpenGLBuffer *textureMesh();
+    static QOpenGLBuffer *vertexMesh();
+    static QOpenGLBuffer *textureMesh();
 private:
-    static Mesh *m;
-    QOpenGLBuffer *bufferVertexCoords;
-    QOpenGLBuffer *bufferTextureCoords;
-    float *texture;
-    float *vertex;
+    static QOpenGLBuffer *bufferVertexCoords;
+    static QOpenGLBuffer *bufferTextureCoords;
+    static float *texture;
+    static float *vertex;
 };
 
 #endif // MESH_H
