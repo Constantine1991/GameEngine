@@ -13,24 +13,33 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-    keyboard.cpp \
-    mouse.cpp \
-    gamewindow.cpp \
     testgame.cpp \
-    texture.cpp \
-    shader.cpp \
-    mesh.cpp \
-    geometry.cpp
+    Engine/gameobject.cpp \
+    Engine/gameresourse.cpp \
+    Engine/gamewindow.cpp \
+    Engine/geometry.cpp \
+    Engine/keyboard.cpp \
+    Engine/mesh.cpp \
+    Engine/mouse.cpp \
+    Engine/shader.cpp \
+    Engine/texture.cpp \
+    testobject.cpp \
+    Engine/transform.cpp
 
-HEADERS  += \
-    keyboard.h \
-    mouse.h \
-    gamewindow.h \
+HEADERS  +=\
     testgame.h \
-    texture.h \
-    shader.h \
-    mesh.h \
-    geometry.h
+    Engine/gameobject.h \
+    Engine/gameresourse.h \
+    Engine/gamewindow.h \
+    Engine/geometry.h \
+    Engine/keyboard.h \
+    Engine/map.h \
+    Engine/mesh.h \
+    Engine/mouse.h \
+    Engine/shader.h \
+    Engine/texture.h \
+    testobject.h \
+    Engine/transform.h
 
 FORMS    +=
 
